@@ -1,0 +1,326 @@
+html
+{
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+}
+*, *:before, *:after
+{
+    box-sizing: inherit;
+}
+
+
+.header
+{
+    width: 100%;
+    height: 56.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    background-image: url('../img/pexels-david-bartus-690779.jpg');
+    background-size: cover;
+    background-position: center center;
+   
+}
+.header h2 
+{
+    font-size: 3.4rem;
+    color: #ffffff;
+    margin-left: -3rem;
+    font-family: 'Righteous', cursive;
+}
+
+.enlaces 
+{
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.6rem;
+    margin-left: 3rem;
+    text-decoration: none;
+    transition: all .4s linear;
+    border-left: 2px solid #FC0211;
+    padding-left: 4rem;
+}
+.enlace-activo
+{
+    border:none;
+}
+.enlaces:hover 
+{
+    color: #FF0808;
+
+    
+    
+}
+
+.header img
+{
+    width: 60rem;
+     height: 60rem;
+     margin-left: 6rem;
+}
+.enVivo 
+{
+    font-size: 2.2rem;
+    width: 15rem;
+    height: 3rem;
+    border: 1px solid #ffffff;
+    border-radius: 1rem;
+    background-color: transparent;
+    color: #FC0211;
+    padding-bottom: 1rem;
+    margin-right: -30rem;
+    transition:all 0.3s linear;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    
+
+}
+.onlineBtn
+{
+    color: #ffffff;
+    font-size: 2rem;
+    display: block;
+    margin-right: 2rem;
+    margin-left: 1rem;
+    animation : 1s blink infinite;
+   display: none;
+   
+}
+
+@keyframes blink
+{
+    0%
+    {
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        opacity: 0;
+    }
+}
+
+.enVivo:active{
+    transform: rotateY(360deg);
+   
+    
+  
+}
+
+.segunda_seccion 
+{
+    width: 100%;
+    height: 100rem;
+    
+    position: relative;
+   
+}
+.linkes 
+{
+    width: 100rem;
+    height: 8rem;
+    background-color: #262626;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin:-3rem 40rem;
+    box-shadow: .3rem .3rem .3rem dimgrey;
+    border-radius: 1rem;
+    position: absolute;
+    
+    
+}
+.noticias 
+{
+    width: 100%;
+    height: 90rem;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10rem;
+    margin-bottom: 0;
+
+}
+.noticias h2,
+.noticias_titulo
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5.4rem;
+    text-align: center;
+    transition: all 1s linear;
+    display: block;
+    z-index: 33;
+    
+}
+.noticias h2:hover 
+{
+    color: #ffffff;
+    
+}
+
+
+
+
+
+
+.noticias_titulares 
+{
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4rem;
+}
+.card 
+{
+    width: 40rem;
+    height: 60rem;
+    padding: 1rem 2rem;
+    margin-top: -3rem;
+
+   
+}
+.card img 
+{
+    width: 100%;
+    height: 25rem;
+    transition: all .2s linear;
+}
+.card img:hover 
+{
+    filter:opacity(.8);
+}
+.card h3 
+{
+    font-size: 2.2rem;
+    font-family: 'Montserrat', sans-serif;
+    color:#262626;
+    text-align: left;
+    font-weight: 700;
+}
+.card p 
+{
+    font-size: 1.8rem;
+    text-align: justify;
+    color: #262626;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.mas_noticias 
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9rem;
+}
+.publicidad,
+.publicidad2 
+{
+    width: 90%;
+    height: 30rem;
+    margin: 0 auto;
+    background-image: url('../img/bannerUno.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+}
+.publicidad2 
+{
+    background-image: url('https://www.marketingsgm.es/wp-content/uploads/banner-adidas.jpg');
+}
+.podCast
+{
+    width: 100%;
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding:4rem 1rem;
+}
+.podCast_card 
+{
+    width: 100%;
+    height: 70rem;
+    display: flex;
+    justify-content: space-around;
+}
+.card_podCast
+{
+    width: 30rem;
+    height: 40rem;
+    position: relative;
+    border-top-left-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+    overflow: hidden;
+    
+    
+}
+.card_podCast_element
+{
+    width: 80rem;
+    height: 100%;
+    display: flex;
+    background-image: url('../img/background_podcast.jpg');
+    background-size: cover;
+    background-position: center center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-left: -25rem;
+    z-index: 99;
+    transition: all .4s ease-in;
+    border-top-left-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+}
+.card_podCast_element:hover 
+{
+   opacity: 0;
+   z-index: -5;
+}
+.card_podCast_info:hover
+{
+  z-index: 99;
+  background-color: #ffffff;
+}
+.card_podCast_element img 
+{
+    width:20rem;
+    height: 20rem;
+    border-radius:50%;
+}
+.card_podCast_info
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    
+}
+
+.card_podCast_element p
+{
+    font-size: 2.2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 700;
+
+}
+.card_podCast_info p
+{
+    font-size: 1.8rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #262626;
+    text-align: center;
+    line-height: 3rem;
+}
+.audio
+{
+    display: none;
+}
+
+
